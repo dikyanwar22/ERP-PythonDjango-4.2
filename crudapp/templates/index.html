@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Daftar Mahasiswa</h2>
+<a href="{% url 'tambah_mahasiswa' %}" class="btn btn-primary">Tambah Mahasiswa</a>
+<table class="table mt-3">
+    <tr>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Email</th>
+        <th>Jurusan</th>
+        <th>Aksi</th>
+    </tr>
+    {% for m in mahasiswa %}
+    <tr>
+        <td>{{ m.nama }}</td>
+        <td>{{ m.nim }}</td>
+        <td>{{ m.email }}</td>
+        <td>{{ m.jurusan }}</td>
+        <td>
+            <a href="{% url 'edit_mahasiswa' m.id %}" class="btn btn-warning">Edit</a>
+            <a href="{% url 'hapus_mahasiswa' m.id %}" class="btn btn-danger">Hapus</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
