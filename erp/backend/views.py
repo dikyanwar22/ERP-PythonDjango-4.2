@@ -11,6 +11,18 @@ from erp.models.forms import MahasiswaForm
 def index(request):
     return render(request, 'modules/warehouse/index.html')
 
+#GET data JSON
+def get_module(request):
+    if request.method == "GET":
+        mahasiswa_list = Mahasiswa.objects.values("id", "nama", "nim", "jurusan")
+        mahasiswa_data = list(mahasiswa_list)
+        return JsonResponse({"data": mahasiswa_data}, safe=False)
+    return JsonResponse({"error": "Invalid request"}, status=400)
+
+#halaman add
+def add_data(request):
+    return render(request, 'modules/warehouse/add.html')
+
 # Create (Tambah data)
 def tambah_mahasiswa(request):
     if request.method == "POST":
@@ -39,11 +51,4 @@ def hapus_mahasiswa(request, id):
     mahasiswa = Mahasiswa.objects.get(id=id)
     mahasiswa.delete()
     return redirect('index')
-
-def get_module(request):
-    if request.method == "GET":
-        mahasiswa_list = Mahasiswa.objects.values("id", "nama", "nim", "jurusan")
-        mahasiswa_data = list(mahasiswa_list)
-        return JsonResponse({"data": mahasiswa_data}, safe=False)
-    return JsonResponse({"error": "Invalid request"}, status=400)
 
