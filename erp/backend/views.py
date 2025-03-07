@@ -1,31 +1,32 @@
 from django.shortcuts import render, redirect
 from django.db import connection
 
-from ..models import Mahasiswa
-from ..model.forms import MahasiswaForm
+from erp.models.models import Mahasiswa
+from erp.models.forms import MahasiswaForm
+
 
 # Read (Tampilkan data)
-# def index(request):
-#     mahasiswa = Mahasiswa.objects.all()
-#     return render(request, 'index.html', {'mahasiswa': mahasiswa})
+def index(request):
+    mahasiswa = Mahasiswa.objects.all()
+    return render(request, 'modules/crud/index.html', {'mahasiswa': mahasiswa})
 
 #atau bisa juga pakai cara ini
-def index(request):
-    with connection.cursor() as cursor:
-        cursor.execute("SELECT id, nama, nim, jurusan FROM crudapp_mahasiswa")  # Sesuaikan dengan tabel Anda
-        mahasiswa = cursor.fetchall()  # Ambil semua hasil query
+# def index(request):
+#     with connection.cursor() as cursor:
+#         cursor.execute("SELECT id, nama, nim, jurusan FROM crudapp_mahasiswa")  # Sesuaikan dengan tabel Anda
+#         mahasiswa = cursor.fetchall()  # Ambil semua hasil query
 
-    # Mengonversi hasil query ke dalam daftar dictionary
-    mahasiswa_list = []
-    for row in mahasiswa:
-        mahasiswa_list.append({
-            'id': row[0],
-            'nama': row[1],
-            'nim': row[2],
-            'jurusan': row[3]
-        })
+#     # Mengonversi hasil query ke dalam daftar dictionary
+#     mahasiswa_list = []
+#     for row in mahasiswa:
+#         mahasiswa_list.append({
+#             'id': row[0],
+#             'nama': row[1],
+#             'nim': row[2],
+#             'jurusan': row[3]
+#         })
 
-    return render(request, 'modules/crud/index.html', {'mahasiswa': mahasiswa_list})
+#     return render(request, 'modules/crud/index.html', {'mahasiswa': mahasiswa_list})
 
 # Create (Tambah data)
 def tambah_mahasiswa(request):
@@ -55,3 +56,8 @@ def hapus_mahasiswa(request, id):
     mahasiswa = Mahasiswa.objects.get(id=id)
     mahasiswa.delete()
     return redirect('index')
+
+# def hapus_mahasiswa(request, id):
+#     with connection.cursor() as cursor:
+#         cursor.execute("DELETE FROM crudapp_mahasiswa WHERE id = %s", [id])
+#     return redirect('index')
