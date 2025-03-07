@@ -6,27 +6,27 @@ from erp.models.forms import MahasiswaForm
 
 
 # Read (Tampilkan data)
-# def index(request):
-#     mahasiswa = Mahasiswa.objects.all()
-#     return render(request, 'modules/crud/index.html', {'mahasiswa': mahasiswa})
+def index(request):
+    mahasiswa = Mahasiswa.objects.all()
+    return render(request, 'modules/crud/index.html', {'mahasiswa': mahasiswa})
 
 #atau bisa juga pakai cara ini
-def index(request):
-    with connection.cursor() as cursor:
-        cursor.execute("SELECT id, nama, nim, jurusan FROM erp_mahasiswa")  # Sesuaikan dengan tabel Anda
-        mahasiswa = cursor.fetchall()  # Ambil semua hasil query
+# def index(request):
+#     with connection.cursor() as cursor:
+#         cursor.execute("SELECT id, nama, nim, jurusan FROM erp_mahasiswa")  # Sesuaikan dengan tabel Anda
+#         mahasiswa = cursor.fetchall()  # Ambil semua hasil query
 
-    # Mengonversi hasil query ke dalam daftar dictionary
-    mahasiswa_list = []
-    for row in mahasiswa:
-        mahasiswa_list.append({
-            'id': row[0],
-            'nama': row[1],
-            'nim': row[2],
-            'jurusan': row[3]
-        })
+#     # Mengonversi hasil query ke dalam daftar dictionary
+#     mahasiswa_list = []
+#     for row in mahasiswa:
+#         mahasiswa_list.append({
+#             'id': row[0],
+#             'nama': row[1],
+#             'nim': row[2],
+#             'jurusan': row[3]
+#         })
 
-    return render(request, 'modules/crud/index.html', {'mahasiswa': mahasiswa_list})
+#     return render(request, 'modules/crud/index.html', {'mahasiswa': mahasiswa_list})
 
 # Create (Tambah data)
 def tambah_mahasiswa(request):
