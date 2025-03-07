@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.http import JsonResponse
+from django.http import HttpResponse
 from django.db import connection
 
 from erp.models.models import Mahasiswa
@@ -37,3 +39,11 @@ def hapus_mahasiswa(request, id):
     mahasiswa = Mahasiswa.objects.get(id=id)
     mahasiswa.delete()
     return redirect('index')
+
+def get_module(request):
+    if request.method == "GET":
+        mahasiswa_list = Mahasiswa.objects.values("id", "nama", "nim", "jurusan")
+        mahasiswa_data = list(mahasiswa_list)
+        return JsonResponse({"data": mahasiswa_data}, safe=False)
+    return JsonResponse({"error": "Invalid request"}, status=400)
+

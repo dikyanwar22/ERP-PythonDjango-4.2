@@ -15,10 +15,10 @@
                     <div class="card">
                         <div class="d-flex card-header justify-content-between align-items-center">
                             <h4 class="header-title">Brands Listing</h4>
-                            <a href="javascript:void(0);" class="btn btn-sm btn-light">Add Brand <i class="ti ti-plus ms-1"></i></a>
+                            <a id="btn-add" class="btn btn-sm btn-light">Add Brand <i class="ti ti-plus ms-1"></i></a>
                         </div>
-                    </div> <!-- end card-->
-                </div> <!-- end col-->
+                    </div>
+                </div>
 
                 <div class="col-xxl-6">
                     <div class="card card-h-100">
@@ -33,179 +33,20 @@
 
                         <div class="card-body p-0">
                             <div class="table-responsive">
-                                <table class="table table-custom align-middle table-nowrap table-hover mb-0">
-                                    <tbody>
+                                <table id="main_table" class="table table-custom align-middle table-nowrap table-hover mb-0">
+                                    <thead>
                                         <tr>
-                                            <td style="width: 85px;">
-                                                <div class="avatar-lg border rounded">
-                                                    <img src="{% static 'adminto/assets/images/products/p-1.png' %}" alt="Product-10" class="img-fluid rounded-2">
-                                                </div>
-                                            </td>
-                                            <td class="ps-0">
-                                                <h5 class="fs-14 my-1"><a href="#!" class="link-reset">Modern Desk
-                                                        Lamp</a></h5>
-                                                <span class="text-muted fs-12">15 April 2024</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="fs-14 my-1">$45.99</h5>
-                                                <span class="text-muted fs-12">Price</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="fs-14 my-1">120</h5>
-                                                <span class="text-muted fs-12">Quantity</span>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-end">
-                                                    <div class="me-2">
-                                                        <h5 class="fs-14 my-1">$5,518.80</h5>
-                                                        <span class="text-muted fs-12">Amount</span>
-                                                    </div>
-                                                </div>
-                                            </td>
+                                            <th>No</th>
+                                            <th>Nama</th>
+                                            <th>NIM</th>
+                                            <th>Jurusan</th>
                                         </tr>
-                                        <tr>
-                                            <td style="width: 85px;">
-                                                <div class="avatar-lg border rounded">
-                                                    <img src="{% static 'adminto/assets/images/products/p-2.png' %}" alt="Product-11" class="img-fluid rounded-2">
-                                                </div>
-                                            </td>
-                                            <td class="ps-0">
-                                                <h5 class="fs-14 my-1"><a href="#!" class="link-reset">Vintage
-                                                        Wooden Chair</a></h5>
-                                                <span class="text-muted fs-12">10 April 2024</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="fs-14 my-1">$99.00</h5>
-                                                <span class="text-muted fs-12">Price</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="fs-14 my-1">80</h5>
-                                                <span class="text-muted fs-12">Quantity</span>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-end">
-                                                    <div class="me-2">
-                                                        <h5 class="fs-14 my-1">$7,920.00</h5>
-                                                        <span class="text-muted fs-12">Amount</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 85px;">
-                                                <div class="avatar-lg border rounded">
-                                                    <img src="{% static 'adminto/assets/images/products/p-3.png' %}" alt="Product-12" class="img-fluid rounded-2">
-                                                </div>
-                                            </td>
-                                            <td class="ps-0">
-                                                <h5 class="fs-14 my-1"><a href="#!" class="link-reset">Wireless
-                                                        Keyboard</a></h5>
-                                                <span class="text-muted fs-12">05 April 2024</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="fs-14 my-1">$29.99</h5>
-                                                <span class="text-muted fs-12">Price</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="fs-14 my-1">150</h5>
-                                                <span class="text-muted fs-12">Quantity</span>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-end">
-                                                    <div class="me-2">
-                                                        <h5 class="fs-14 my-1">$4,498.50</h5>
-                                                        <span class="text-muted fs-12">Amount</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 85px;">
-                                                <div class="avatar-lg border rounded">
-                                                    <img src="{% static 'adminto/assets/images/products/p-4.png' %}" alt="Product-13" class="img-fluid rounded-2">
-                                                </div>
-                                            </td>
-                                            <td class="ps-0">
-                                                <h5 class="fs-14 my-1"><a href="#!" class="link-reset">Bluetooth
-                                                        Speaker</a></h5>
-                                                <span class="text-muted fs-12">02 April 2024</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="fs-14 my-1">$65.00</h5>
-                                                <span class="text-muted fs-12">Price</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="fs-14 my-1">90</h5>
-                                                <span class="text-muted fs-12">Quantity</span>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-end">
-                                                    <div class="me-2">
-                                                        <h5 class="fs-14 my-1">$5,850.00</h5>
-                                                        <span class="text-muted fs-12">Amount</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 85px;">
-                                                <div class="avatar-lg border rounded">
-                                                    <img src="{% static 'adminto/assets/images/products/p-5.png' %}" alt="Product-14" class="img-fluid rounded-2">
-                                                </div>
-                                            </td>
-                                            <td class="ps-0">
-                                                <h5 class="fs-14 my-1"><a href="#!" class="link-reset">Classic Table
-                                                        Lamp</a></h5>
-                                                <span class="text-muted fs-12">29 March 2024</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="fs-14 my-1">$42.50</h5>
-                                                <span class="text-muted fs-12">Price</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="fs-14 my-1">110</h5>
-                                                <span class="text-muted fs-12">Quantity</span>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-end">
-                                                    <div class="me-2">
-                                                        <h5 class="fs-14 my-1">$4,675.00</h5>
-                                                        <span class="text-muted fs-12">Amount</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-
+                                    </thead>
+                                    <tbody></tbody>
                                 </table>
                             </div> <!-- end table-responsive-->
                         </div> <!-- end card-body-->
 
-                        <div class="card-footer">
-                            <div class="align-items-center justify-content-between row text-center text-sm-start">
-                                <div class="col-sm">
-                                    <div class="text-muted">
-                                        Showing <span class="fw-semibold">5</span> of <span class="fw-semibold">10</span> Results
-                                    </div>
-                                </div>
-                                <div class="col-sm-auto mt-3 mt-sm-0">
-                                    <ul class="pagination pagination-boxed pagination-sm mb-0 justify-content-center">
-                                        <li class="page-item disabled">
-                                            <a href="#" class="page-link"><i class="ti ti-chevron-left"></i></a>
-                                        </li>
-                                        <li class="page-item active">
-                                            <a href="#" class="page-link">1</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a href="#" class="page-link">2</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a href="#" class="page-link"><i class="ti ti-chevron-right"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> <!-- -->
-                        </div>
                     </div> <!-- end card-->
                 </div> <!-- end col-->
             </div> <!-- end row-->
@@ -219,6 +60,43 @@
 
 </div>
 <!-- END wrapper -->
-
 {% include 'partials/theme.html' %}
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+$(document).ready(function () {
+    function main_table() {
+        $.ajax({
+            url: "{% url 'get_module' %}",
+            method: "GET",
+            contentType: "application/json",
+            headers: {
+                "X-CSRFToken": $("meta[name='csrf-token']").attr("content")
+            },
+            success: function (data) {
+                console.log("✅ Data diterima:", data);
+                let modules = Array.isArray(data.data) ? data.data : [];
+                let tbody = $("#main_table tbody");
+                tbody.empty();
+
+                modules.forEach((item, index) => {
+                    let row = `
+                        <tr>
+                            <td class="text-center">${index + 1}</td>
+                            <td class="text-center">${item.nama}</td>
+                            <td class="text-center">${item.nim}</td>
+                            <td class="text-center">${item.jurusan}</td>
+                        </tr>`;
+                    tbody.append(row);
+                });
+            },
+            error: function (xhr, status, error) {
+                console.error("❌ AJAX Error:", xhr.status, error);
+            }
+        });
+    }
+    main_table();
+});
+</script>
+
 {% endblock %}
