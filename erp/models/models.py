@@ -6,5 +6,5 @@ class Mahasiswa(models.Model):
     email = models.EmailField()
     jurusan = models.CharField(max_length=50)
 
-    def __str__(self):
-        return self.nama
+    class Meta:
+        db_table = "erp_mahasiswa"  # Ganti sesuai nama tabel yang diinginkan
