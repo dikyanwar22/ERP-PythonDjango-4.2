@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.db import connection
 
-from .models import Mahasiswa
-from .forms import MahasiswaForm
+from ..models import Mahasiswa
+from ..model.forms import MahasiswaForm
 
 # Read (Tampilkan data)
 # def index(request):

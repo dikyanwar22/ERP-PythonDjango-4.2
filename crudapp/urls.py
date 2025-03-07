@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index, tambah_mahasiswa, edit_mahasiswa, hapus_mahasiswa
+from .backend.views import index, tambah_mahasiswa, edit_mahasiswa, hapus_mahasiswa
 
 urlpatterns = [
     path('', index, name='index'),
