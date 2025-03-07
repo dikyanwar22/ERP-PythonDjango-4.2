@@ -25,7 +25,7 @@ def index(request):
             'jurusan': row[3]
         })
 
-    return render(request, 'index.html', {'mahasiswa': mahasiswa_list})
+    return render(request, 'modules/crud/index.html', {'mahasiswa': mahasiswa_list})
 
 # Create (Tambah data)
 def tambah_mahasiswa(request):
@@ -36,7 +36,7 @@ def tambah_mahasiswa(request):
             return redirect('index')
     else:
         form = MahasiswaForm()
-    return render(request, 'tambah.html', {'form': form})
+    return render(request, 'modules/crud/tambah.html', {'form': form})
 
 # Update (Edit data)
 def edit_mahasiswa(request, id):
@@ -48,7 +48,7 @@ def edit_mahasiswa(request, id):
             return redirect('index')
     else:
         form = MahasiswaForm(instance=mahasiswa)
-    return render(request, 'edit.html', {'form': form})
+    return render(request, 'modules/crud/edit.html', {'form': form})
 
 # Delete (Hapus data)
 def hapus_mahasiswa(request, id):
