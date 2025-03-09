@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
+import json
 from django.http import HttpResponse
 from django.db import connection
 
@@ -22,6 +23,62 @@ def get_module(request):
 #halaman add
 def add_data(request):
     return render(request, 'modules/warehouse/add.html')
+
+# Proses insert data (API)
+# def add_action(request):
+#     if request.method == "POST":
+#         data = json.loads(request.body)  # Parsing JSON dari request
+#         form = MahasiswaForm(data)
+        
+#         if form.is_valid():
+#             mahasiswa = form.save()
+#             return JsonResponse({"success": True, "message": "Data berhasil ditambahkan!", "id": mahasiswa.id})
+        
+#         return JsonResponse({"success": False, "message": "Validasi gagal", "errors": form.errors}, status=400)
+
+#     return JsonResponse({"error": "Invalid request"}, status=400)
+
+#atau bisa juga dengan cara ini menggunakan mysql
+import json
+from django.http import JsonResponse
+from django.db import connection  # Koneksi ke database
+
+def add_action(request):
+    if request.method == "POST":
+        try:
+            data = json.loads(request.body)  # Parsing JSON dari request
+            nama = data.get("nama")
+            nim = data.get("nim")
+            email = data.get("email")
+            jurusan = data.get("jurusan")
+
+            # Validasi data tidak boleh kosong
+            if not nama or not nim or not email or not jurusan:
+                return JsonResponse({"success": False, "message": "Semua field harus diisi!"}, status=400)
+
+            # Query insert ke MySQL
+            with connection.cursor() as cursor:
+                sql = "INSERT INTO erp_mahasiswa (nama, nim, email, jurusan) VALUES (%s, %s, %s, %s)"
+                cursor.execute(sql, [nama, nim, email, jurusan])
+                connection.commit()  # Simpan perubahan
+
+            return JsonResponse({"success": True, "message": "Data berhasil ditambahkan!"})
+
+        except json.JSONDecodeError:
+            return JsonResponse({"success": False, "message": "Format JSON tidak valid"}, status=400)
+        except Exception as e:
+            return JsonResponse({"success": False, "message": f"Terjadi kesalahan: {str(e)}"}, status=500)
+
+    return JsonResponse({"error": "Invalid request"}, status=400)
+
+    
+
+
+
+
+
+
+
 
 # Create (Tambah data)
 def tambah_mahasiswa(request):

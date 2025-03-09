@@ -1,5 +1,5 @@
 from django.urls import path
-from .backend.views import index, tambah_mahasiswa, edit_mahasiswa, hapus_mahasiswa, add_data, get_module
+from .backend.views import index, tambah_mahasiswa, edit_mahasiswa, hapus_mahasiswa, add_data, get_module, add_action
 
 urlpatterns = [
     path('', index, name='index'),
@@ -9,5 +9,6 @@ urlpatterns = [
 
     path('add_data/', add_data, name='add_data'),
     path('get_module/', get_module, name='get_module'),
+    path('add_action/', add_action, name='add_action'),
 ]
 
