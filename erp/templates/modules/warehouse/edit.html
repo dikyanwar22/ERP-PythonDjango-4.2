@@ -69,7 +69,8 @@
 $(document).ready(function() {
     // Ambil ID URL saat ini
     const url = window.location.href;
-    const id = url.substring(url.lastIndexOf('/') + 1);
+    const id = url.split('/').filter(Boolean).pop();
+
     const csrfToken = $("meta[name='csrf-token']").attr("content");
         $.ajax({
             url: "{% url 'view_edit' %}",
@@ -94,6 +95,10 @@ $(document).ready(function() {
 
 
 $('#btn-save').on('click', function() {
+        // Ambil ID URL saat ini
+        const url = window.location.href;
+        const id = url.split('/').filter(Boolean).pop();
+
         const nama = $('#nama').val();
         const nim = $('#nim').val();
         const email = $('#email').val();
@@ -102,13 +107,13 @@ $('#btn-save').on('click', function() {
         const csrfToken = $("meta[name='csrf-token']").attr("content");
 
         $.ajax({
-            url: "{% url 'add_action' %}",
+            url: "{% url 'edit_action' %}",
             method: "POST",
             contentType: "application/json",
             headers: {
                 "X-CSRFToken": csrfToken
             },
-            data: JSON.stringify({ nama: nama, nim: nim, email: email, jurusan: jurusan }),
+            data: JSON.stringify({ id: id, nama: nama, nim: nim, email: email, jurusan: jurusan }),
             success: function(response) {
                 alert(response.message);
                 window.location.href = "{% url 'index' %}";
