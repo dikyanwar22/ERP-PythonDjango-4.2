@@ -67,11 +67,21 @@ def add_action(request):
         except json.JSONDecodeError:
             return JsonResponse({"success": False, "message": "Format JSON tidak valid"}, status=400)
         except Exception as e:
-            return JsonResponse({"success": False, "message": f"Terjadi kesalahan: {str(e)}"}, status=500)
+            return JsonResponse({"success": False, "message": "Terjadi kesalahan: {str(e)}"}, status=500)
 
     return JsonResponse({"error": "Invalid request"}, status=400)
 
-    
+# Delete (Hapus data)
+# def hapus_mahasiswa(request, id):
+#     mahasiswa = Mahasiswa.objects.get(id=id)
+#     mahasiswa.delete()
+#     return redirect('index')   
+
+#atau bisa juga dengan cara ini
+def hapus_mahasiswa(request, id):
+    with connection.cursor() as cursor:
+        cursor.execute("DELETE FROM erp_mahasiswa WHERE id = %s", [id])
+    return redirect('index') 
 
 
 
@@ -103,9 +113,5 @@ def edit_mahasiswa(request, id):
         form = MahasiswaForm(instance=mahasiswa)
     return render(request, 'modules/crud/edit.html', {'form': form})
 
-# Delete (Hapus data)
-def hapus_mahasiswa(request, id):
-    mahasiswa = Mahasiswa.objects.get(id=id)
-    mahasiswa.delete()
-    return redirect('index')
+
 

@@ -40,6 +40,7 @@
                                             <th>Nama</th>
                                             <th>NIM</th>
                                             <th>Jurusan</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody></tbody>
@@ -80,12 +81,16 @@ $(document).ready(function () {
                 tbody.empty();
 
                 modules.forEach((item, index) => {
+                    let deleteUrl = "{% url 'hapus_mahasiswa' 0 %}".replace("0", item.id);
                     let row = `
                         <tr>
                             <td class="text-center">${index + 1}</td>
                             <td class="text-center">${item.nama}</td>
                             <td class="text-center">${item.nim}</td>
                             <td class="text-center">${item.jurusan}</td>
+                            <td class="text-center">
+                                <a href="${deleteUrl}" class="btn btn-sm btn-danger">Delete <i class="ti ti-file-export ms-1"></i></a>
+                            </td>
                         </tr>`;
                     tbody.append(row);
                 });
