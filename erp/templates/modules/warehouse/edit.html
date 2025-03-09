@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+ <!-- Begin page -->
+ <div class="wrapper">
+    {% include 'partials/header.html' %}
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+    <div class="page-content">
+        <div class="page-container">
+            <div class="row">
+                {% include 'partials/breadcrumb.html' %}
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header border-bottom border-dashed d-flex align-items-center">
+                                <h4 class="header-title">Input Types</h4>
+                            </div>
+
+                            <div class="card-body">
+                                <form>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Nama</label>
+                                                <input type="text" id="nama" class="form-control">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Email</label>
+                                                <input type="text" id="email" class="form-control">
+                                            </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Nim</label>
+                                                <input type="text" id="nim" class="form-control">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Jurusan</label>
+                                                <input type="text" id="jurusan" class="form-control">
+                                            </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <a onclick="window.history.back()" class="btn btn-outline-secondary px-4">Cancel</a>
+                                        <button type="button" id="btn-save" class="btn btn-primary px-4">Submit</button>
+                                    </div>
+                                </div>
+                                </form>
+                                <!-- end row-->
+                            </div> <!-- end card-body -->
+                        </div> <!-- end card -->
+                    </div><!-- end col -->
+                </div>
+
+        </div> <!-- container -->
+        {% include 'partials/footer.html' %}
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+<!-- END wrapper -->
+{% include 'partials/theme.html' %}
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Ambil ID URL saat ini
+    const url = window.location.href;
+    const id = url.substring(url.lastIndexOf('/') + 1);
+    const csrfToken = $("meta[name='csrf-token']").attr("content");
+        $.ajax({
+            url: "{% url 'view_edit' %}",
+            method: "POST",
+            contentType: "application/json",
+            headers: {
+                "X-CSRFToken": csrfToken
+            },
+            data: JSON.stringify({ id: id }),
+            success: function(response) {
+                $('#nama').val(response.nama);
+                $('#nim').val(response.nim);
+                $('#jurusan').val(response.jurusan);
+                $('#email').val(response.email);
+            },
+            error: function(xhr, status, error) {
+                console.error("❌ AJAX Error:", xhr.status, error);
+                alert("Terjadi kesalahan, silakan coba lagi.");
+            }
+        });
+});
+
+
+$('#btn-save').on('click', function() {
+        const nama = $('#nama').val();
+        const nim = $('#nim').val();
+        const email = $('#email').val();
+        const jurusan = $('#jurusan').val();
+
+        const csrfToken = $("meta[name='csrf-token']").attr("content");
+
+        $.ajax({
+            url: "{% url 'add_action' %}",
+            method: "POST",
+            contentType: "application/json",
+            headers: {
+                "X-CSRFToken": csrfToken
+            },
+            data: JSON.stringify({ nama: nama, nim: nim, email: email, jurusan: jurusan }),
+            success: function(response) {
+                alert(response.message);
+                window.location.href = "{% url 'index' %}";
+            },
+            error: function(xhr, status, error) {
+                console.error("❌ AJAX Error:", xhr.status, error);
+                alert("Terjadi kesalahan, silakan coba lagi.");
+            }
+        });
+    });
+</script>
+{% endblock %}

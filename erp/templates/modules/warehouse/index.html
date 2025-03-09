@@ -81,6 +81,7 @@ $(document).ready(function () {
                 tbody.empty();
 
                 modules.forEach((item, index) => {
+                    let EditUrl = "{% url 'edit_mahasiswa' 0 %}".replace("0", item.id);
                     let deleteUrl = "{% url 'hapus_mahasiswa' 0 %}".replace("0", item.id);
                     let row = `
                         <tr>
@@ -89,6 +90,7 @@ $(document).ready(function () {
                             <td class="text-center">${item.nim}</td>
                             <td class="text-center">${item.jurusan}</td>
                             <td class="text-center">
+                                <a href="${EditUrl}" class="btn btn-sm btn-success">Edit <i class="ti ti-file-export ms-1"></i></a>&ensp;
                                 <a href="${deleteUrl}" class="btn btn-sm btn-danger">Delete <i class="ti ti-file-export ms-1"></i></a>
                             </td>
                         </tr>`;

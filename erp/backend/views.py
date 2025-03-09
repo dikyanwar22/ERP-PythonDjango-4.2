@@ -24,6 +24,62 @@ def get_module(request):
 def add_data(request):
     return render(request, 'modules/warehouse/add.html')
 
+# Update (Edit data)
+def function_edit(request, id):
+    return render(request, 'modules/warehouse/edit.html')
+
+#view edit
+# def function_view_edit(request):
+#     if request.method == "POST":
+#         try:
+#             data = json.loads(request.body)  # Ambil JSON dari request body
+#             id = data.get("id")  # Ambil ID dari JSON
+
+#             mahasiswa = Mahasiswa.objects.get(id=id)
+
+#             return JsonResponse({
+#                 "nama": mahasiswa.nama,
+#                 "nim": mahasiswa.nim,
+#                 "jurusan": mahasiswa.jurusan,
+#                 "email": mahasiswa.email
+#             })
+#         except Mahasiswa.DoesNotExist:
+#             return JsonResponse({"error": "Mahasiswa tidak ditemukan"}, status=404)
+#         except json.JSONDecodeError:
+#             return JsonResponse({"error": "Format JSON salah"}, status=400)
+
+#     return JsonResponse({"error": "Invalid request"}, status=400)
+
+#atau bisa juga dengan cara ini
+def function_view_edit(request):
+    if request.method == "POST":
+        try:
+            data = json.loads(request.body)  # Ambil JSON dari request body
+            id = data.get("id")  # Ambil ID dari JSON
+
+            with connection.cursor() as cursor:
+                cursor.execute("SELECT nama, nim, jurusan, email FROM erp_mahasiswa WHERE id = %s", [id])
+                row = cursor.fetchone()  # Ambil satu baris hasil query
+
+            if row:
+                # Mapping hasil query ke dictionary
+                mahasiswa = {
+                    "nama": row[0],
+                    "nim": row[1],
+                    "jurusan": row[2],
+                    "email": row[3],
+                }
+                return JsonResponse(mahasiswa)
+            else:
+                return JsonResponse({"error": "Mahasiswa tidak ditemukan"}, status=404)
+
+        except json.JSONDecodeError:
+            return JsonResponse({"error": "Format JSON salah"}, status=400)
+        except Exception as e:
+            return JsonResponse({"error": f"Terjadi kesalahan: {str(e)}"}, status=500)
+
+    return JsonResponse({"error": "Invalid request"}, status=400)
+
 # Proses insert data (API)
 # def add_action(request):
 #     if request.method == "POST":
@@ -39,10 +95,6 @@ def add_data(request):
 #     return JsonResponse({"error": "Invalid request"}, status=400)
 
 #atau bisa juga dengan cara ini menggunakan mysql
-import json
-from django.http import JsonResponse
-from django.db import connection  # Koneksi ke database
-
 def add_action(request):
     if request.method == "POST":
         try:
@@ -100,18 +152,6 @@ def tambah_mahasiswa(request):
     else:
         form = MahasiswaForm()
     return render(request, 'modules/crud/tambah.html', {'form': form})
-
-# Update (Edit data)
-def edit_mahasiswa(request, id):
-    mahasiswa = Mahasiswa.objects.get(id=id)
-    if request.method == "POST":
-        form = MahasiswaForm(request.POST, instance=mahasiswa)
-        if form.is_valid():
-            form.save()
-            return redirect('index')
-    else:
-        form = MahasiswaForm(instance=mahasiswa)
-    return render(request, 'modules/crud/edit.html', {'form': form})
 
 
 
