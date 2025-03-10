@@ -1,0 +1,11 @@
+CARA MENJALANKAN DJANGO 4.2 :
+
+python -m venv env
+
+env\Scripts\activate
+
+pip install django
+
+pip install mysqlclient
+
+python manage.py runserver
