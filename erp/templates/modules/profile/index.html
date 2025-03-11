@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+ <!-- Begin page -->
+ <div class="wrapper">
+    {% include 'partials/header.html' %}
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+    <div class="page-content">
+        <div class="page-container">
+            <div class="row ms-1 me-1">
+                {% include 'partials/breadcrumb.html' %}
+
+               <!-- content -->
+               <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="assets/images/users/avatar-1.jpg" class="rounded-circle avatar-lg mb-3" alt="Profile Picture">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="text-muted">Administrator</p>
+                        <button class="btn btn-primary btn-sm"><i class="fa fa-upload"></i>&ensp;Upload Avatar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#updateAccount" role="tab">Update Akun</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#updateData" role="tab">Update Data</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#updateInfo" role="tab">Update Informasi</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#accountActivity" role="tab">Account Activity</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active p-3" id="updateAccount" role="tabpanel">
+                                <p><strong>Email:</strong> johndoe@example.com</p>
+                                <p><strong>Username:</strong> johndoe</p>
+                                <button class="btn btn-success btn-sm">Update Akun</button>
+                            </div>
+                            <div class="tab-pane p-3" id="updateData" role="tabpanel">
+                                <p><strong>Phone:</strong> +123 456 7890</p>
+                                <p><strong>Location:</strong> New York, USA</p>
+                                <button class="btn btn-success btn-sm">Update Data</button>
+                            </div>
+                            <div class="tab-pane p-3" id="updateInfo" role="tabpanel">
+                                <p><strong>Role:</strong> Administrator</p>
+                                <p><strong>Status:</strong> Active</p>
+                                <button class="btn btn-success btn-sm">Update Informasi</button>
+                            </div>
+                            <div class="tab-pane p-3" id="accountActivity" role="tabpanel">
+                                <p><strong>Last Login:</strong> 2024-02-28 14:35:00</p>
+                                <p><strong>Recent Activity:</strong></p>
+                                <ul>
+                                    <li>Logged in from IP: 192.168.1.1</li>
+                                    <li>Updated profile information</li>
+                                    <li>Changed password</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <!-- content -->
+
+            </div> <!-- end row-->
+
+        </div> <!-- container -->
+        {% include 'partials/footer.html' %}
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+<!-- END wrapper -->
+{% include 'partials/theme.html' %}
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+</script>
+
+{% endblock %}

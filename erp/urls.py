@@ -2,6 +2,7 @@ from django.urls import path
 from django.shortcuts import redirect
 from .backend.views import index, function_edit, function_view_edit, function_edit_action, hapus_mahasiswa, add_data, get_module, add_action
 from .backend.auth import login, login_action, register, register_action, logout_action
+from .backend.profile import profile
 
 # Wrapper function untuk memeriksa session
 def auth_required(view_func):
@@ -29,6 +30,7 @@ urlpatterns = [
     path('register/', register, name='register'),
     path('register_action/', register_action, name='register_action'),
 
+    path('profile/', profile, name='profile'),
     path('logout/', logout_action, name='logout_action'),
 
 ]
