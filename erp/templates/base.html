@@ -306,6 +306,88 @@
     </script>
     <!-- chatbox -->
 
+        <!-- menampilkan modul -->
+        <script type="text/javascript">
+        function tampil_modul() {
+        $.ajax({
+            url: "{% url 'module_user' %}",
+            method: 'GET',
+            dataType: 'JSON',
+            contentType: "application/json",
+            headers: {
+              "X-CSRFToken": $("meta[name='csrf-token']").attr("content")
+            },
+            success: function(response) {
+                var elemenHTML = `
+                <nav class="page-container">
+                    <div class="collapse navbar-collapse custom-scroll-horizontal" id="topnav-menu-content">
+                        <ul class="navbar-nav">
+                `;
+    
+                for (var i = 0; i < response.length; i++) {
+                    var modul = response[i];
+    
+                    elemenHTML += `
+                        <li class="nav-item dropdown hover-dropdown">
+                            <a class="nav-link menu-item dropdown-toggle drop-arrow-none" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="menu-icon"><i class="${modul.modul_icon}"></i></span>
+                                <span class="menu-text">${modul.modul}</span>
+                                <div class="menu-arrow"></div>
+                            </a>
+                            <div class="dropdown-menu">
+                    `;
+    
+                    var menus = modul.menus;
+                    for (var j = 0; j < menus.length; j++) {
+                        var menu = menus[j];
+    
+                        if (menu.tipe === 'dropdown' && menu.sub_menus.length > 0) {
+                            elemenHTML += `
+                                <div class="dropdown hover-dropdown">
+                                    <a class="dropdown-item dropdown-toggle drop-arrow-none" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="${menu.menu_icon}"></i>&ensp;${menu.menu}
+                                        <div class="menu-arrow"></div>
+                                    </a>
+                                    <div class="dropdown-menu custom-dropdown-submenu">
+                            `;
+    
+                            var sub_menus = menu.sub_menus;
+                            for (var k = 0; k < sub_menus.length; k++) {
+                                var sub_menu = sub_menus[k];
+    
+                                elemenHTML += `
+                                    <a href="#" class="dropdown-item custom-dropdown">
+                                        <i class="${sub_menu.sub_menu_icon}"></i> ${sub_menu.sub_menu}
+                                    </a>
+                                `;
+                            }
+    
+                            elemenHTML += `</div></div>`; // Tutup submenu dropdown
+                        } else {
+                            elemenHTML += `
+                            <a href="#" class="dropdown-item custom-dropdown">
+                                <i class="${menu.menu_icon}"></i> ${menu.menu}
+                            </a>
+                            `;
+                        }
+                    }
+    
+                    elemenHTML += `</div></li>`; // Tutup modul dan menu
+                }
+    
+                elemenHTML += `</ul></div></nav>`; // Tutup navbar
+    
+                $('#tampil_modul').html(elemenHTML);
+            }
+        });
+    }
+    
+    tampil_modul();
+        </script>
+        <!-- menampilkan modul -->
+
     <!-- Vendor js -->
     <script src="{% static 'adminto/assets/js/vendor.min.js' %}"></script>
 
