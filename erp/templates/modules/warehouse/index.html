@@ -14,7 +14,7 @@
                 <div class="col-xxl-12">
                     <div class="card">
                         <div class="d-flex card-header justify-content-between align-items-center">
-                            <h4 class="header-title">Welcome, {{ request.session.first_name }} {{ request.session.last_name }}</h4> 
+                            <h4 class="header-title">Welcome, {{ request.session.first_name }} {{ request.session.last_name }} || {{ request.session.group_id }}</h4> 
                             <a href="{% url 'add_data' %}" class="btn btn-sm btn-light">Add Brand <i class="ti ti-plus ms-1"></i></a>
                         </div>
                     </div>

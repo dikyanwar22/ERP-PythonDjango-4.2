@@ -20,11 +20,11 @@ def login_action(request):
 
         # Cek apakah email ada di database
         with connection.cursor() as cursor:
-            cursor.execute("SELECT id, username, password, first_name, last_name FROM auth_user WHERE email = %s AND is_active = 1", [email])
+            cursor.execute("SELECT id, username, password, first_name, last_name, group_id FROM auth_user WHERE email = %s AND is_active = 1", [email])
             user = cursor.fetchone()
 
         if user:
-            user_id, username, hashed_password, first_name, last_name = user
+            user_id, username, hashed_password, first_name, last_name, group_id = user
             
             # Cek password yang dimasukkan dengan hash di database
             if check_password(password, hashed_password):
@@ -34,6 +34,7 @@ def login_action(request):
                 request.session['first_name'] = first_name
                 request.session['last_name'] = last_name
                 request.session['email'] = email
+                request.session['group_id'] = group_id
 
                 messages.success(request, "Login berhasil!")
                 return redirect('index')  # Redirect ke halaman utama
