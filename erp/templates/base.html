@@ -36,6 +36,54 @@
 
     <!-- Icons css -->
     <link href="{% static 'adminto/assets/css/icons.min.css' %}" rel="stylesheet" type="text/css" />
+
+    <!-- agar ketika mode smartphone tidak ada scroll horizontal -->
+    <style>
+      @media (min-width: 1024px) {
+      /* Menghapus scroll horizontal */
+      html, body {
+          overflow-x: hidden !important;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+      }
+
+      /* Memastikan semua elemen tidak melebihi viewport */
+      *, *::before, *::after {
+          max-width: 100% !important;
+      }
+
+      /* Mencegah elemen flex atau grid melampaui lebar layar */
+      body {
+          display: flex !important;
+      }
+      
+      /* Memberi jarak pada modules di sisi kiri dan kanan */
+      .spacing-modules {  
+          margin-left: 30px !important;
+          margin-right: 30px !important;
+      }
+  }
+
+  .dropdown-item.custom-dropdown {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      gap: 5px !important;
+      margin: 0 !important;
+      width: auto !important;
+      max-width: none !important;
+      min-width: 0 !important;
+      white-space: nowrap !important;
+  }
+
+  .dropdown-item.custom-dropdown i {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: auto !important;
+      min-width: 0 !important;
+  }
+  </style>
     
     <!-- agar ketika mode smartphone tidak ada scroll horizontal -->
     <style>
