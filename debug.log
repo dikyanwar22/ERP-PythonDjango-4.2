@@ -1,0 +1,6 @@
+2025-03-11 08:53:18,342 - DEBUG - Current User ID: None, Level ID: 1
+2025-03-11 08:53:18,351 - WARNING - Bad Request: /helpdesk/
+2025-03-11 08:53:29,758 - DEBUG - Current User ID: None, Level ID: 1
+2025-03-11 08:53:29,758 - WARNING - Bad Request: /helpdesk/
+2025-03-11 08:55:51,558 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\auth.py changed, reloading.
+2025-03-11 08:56:27,501 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\helpdesk.py changed, reloading.

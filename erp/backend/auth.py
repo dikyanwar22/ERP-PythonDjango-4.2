@@ -35,6 +35,7 @@ def login_action(request):
                 request.session['last_name'] = last_name
                 request.session['email'] = email
                 request.session['group_id'] = group_id
+                request.session.modified = True
 
                 messages.success(request, "Login berhasil!")
                 return redirect('index')  # Redirect ke halaman utama

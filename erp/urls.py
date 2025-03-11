@@ -4,6 +4,7 @@ from .backend.views import index, function_edit, function_view_edit, function_ed
 from .backend.auth import login, login_action, register, register_action, logout_action
 from .backend.profile import profile
 from .backend.modul import module_user
+from .backend.helpdesk import helpdesk_in
 
 # Wrapper function untuk memeriksa session
 def auth_required(view_func):
@@ -32,6 +33,7 @@ urlpatterns = [
     path('register_action/', register_action, name='register_action'),
 
     path('modul/', module_user, name='module_user'),
+    path('helpdesk/', helpdesk_in, name='notif_helpdesk'),
 
     path('profile/', profile, name='profile'),
     path('logout/', logout_action, name='logout_action'),

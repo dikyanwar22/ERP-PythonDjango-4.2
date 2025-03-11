@@ -283,7 +283,7 @@
     show_helpdesk();
     function show_helpdesk() {
       $.ajax({
-      url: "",
+      url: "{% url 'notif_helpdesk' %}",
       method: 'GET',
       dataType: 'JSON',
       success: function(response) {
