@@ -9,14 +9,16 @@ def modul(request):
         cursor.execute("SELECT id, nama, icon, uri, group_id, deleted FROM modul ORDER BY nama ASC")
         modul = cursor.fetchall()
     data = {'modul_list': []}
+
     for row in modul:
         modul_id, nama, icon, uri, group_id, deleted = row
-        group_ids = group_id.split(",") if group_id else []  # Pisahkan ID level
+        group_ids = group_id.split(",") if group_id else []
         akses_list = []
         if group_ids:
             with connection.cursor() as cursor:
                 cursor.execute("SELECT name FROM auth_group WHERE id IN %s ORDER BY name ASC", [tuple(group_ids)])
                 akses_list = [row[0] for row in cursor.fetchall()]
+
         data['modul_list'].append({
             'id': modul_id,
             'nama': nama,
@@ -26,6 +28,58 @@ def modul(request):
             'akses_list': akses_list
         })
     return render(request, "modules/modul/modul/modul.html", {"modul_list": data["modul_list"]})
+
+def menu(request):
+    with connection.cursor() as cursor:
+        # Query utama untuk mendapatkan data menu
+        cursor.execute("""
+            SELECT 
+                a.id, a.modul_id, a.nama AS menu, a.icon, a.deleted, 
+                a.group_id, a.uri AS file, b.uri AS folder, b.nama AS modul
+            FROM menu a
+            JOIN modul b ON a.modul_id = b.id
+            ORDER BY a.nama ASC
+        """)
+        menu = cursor.fetchall()
+
+    # Menyusun dictionary dari hasil query
+    menu_list = [
+        {
+            'id': row[0], 'modul_id': row[1], 'menu': row[2], 'icon': row[3], 
+            'deleted': row[4], 'group_id': row[5], 'file': row[6], 'folder': row[7], 
+            'modul': row[8], 'akses': [], 'modul_nama': ''
+        }
+        for row in menu
+    ]
+
+    akses = {}
+
+    # Nested looping untuk mengambil data akses berdasarkan group_id
+    for item in menu_list:
+        level_ids = item["group_id"].split(",") if item["group_id"] else []
+        akses_list = []
+        
+        with connection.cursor() as cursor:
+            for group_id in level_ids:
+                cursor.execute("SELECT name FROM auth_group WHERE id = %s ORDER BY name ASC", [group_id])
+                result = cursor.fetchone()
+                if result:
+                    akses_list.append(result[0])
+
+        akses[item["id"]] = akses_list
+
+    # Menambahkan akses ke masing-masing item menu
+    for item in menu_list:
+        item["akses"] = akses.get(item["id"], [])
+
+    # Looping tambahan untuk mendapatkan modul_nama
+    for item in menu_list:
+        with connection.cursor() as cursor:
+            cursor.execute("SELECT nama FROM modul WHERE id = %s ORDER BY nama ASC LIMIT 1", [item["modul_id"]])
+            result = cursor.fetchone()
+            item["modul_nama"] = result[0] if result else ""
+
+    return render(request, "modules/modul/menu/menu.html", {"menu": menu_list})
 
 def module_user(request):
     level_akses = request.session.get('group_id')

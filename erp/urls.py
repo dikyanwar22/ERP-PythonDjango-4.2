@@ -3,7 +3,7 @@ from django.shortcuts import redirect
 from .backend.views import index, function_edit, function_view_edit, function_edit_action, hapus_mahasiswa, add_data, get_module, add_action
 from .backend.auth import login, login_action, register, register_action, logout_action
 from .backend.profile import profile
-from .backend.modul import module_user, modul
+from .backend.modul import module_user, modul, menu
 from .backend.helpdesk import helpdesk_in
 
 # Wrapper function untuk memeriksa session
@@ -32,6 +32,8 @@ urlpatterns = [
 
     #khusus untuk modul
     path('modules/', auth_required(modul), name='custom_module'),
+    path('menu/', auth_required(menu), name='custom_menu'),
+    # path('sub_menu/', auth_required(sub_menu), name='custom_sub_menu'),
     #khusus untuk modul
 
     path('login/', login, name='login'),
