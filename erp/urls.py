@@ -3,7 +3,7 @@ from django.shortcuts import redirect
 from .backend.views import index, function_edit, function_view_edit, function_edit_action, hapus_mahasiswa, add_data, get_module, add_action
 from .backend.auth import login, login_action, register, register_action, logout_action
 from .backend.profile import profile
-from .backend.modul import module_user
+from .backend.modul import module_user, modul
 from .backend.helpdesk import helpdesk_in
 
 # Wrapper function untuk memeriksa session
@@ -23,12 +23,16 @@ urlpatterns = [
     path('edit/<int:id>/', auth_required(function_edit), name='edit_mahasiswa'),
     path('view_edit/', auth_required(function_view_edit), name='view_edit'),
     path('aksi_edit/', auth_required(function_edit_action), name='edit_action'),
-
     path('hapus/<int:id>/', auth_required(hapus_mahasiswa), name='hapus_mahasiswa'),
+
     path('profile/', auth_required(profile), name='profile'),
 
     path('modul/', auth_required(module_user), name='module_user'),
     path('helpdesk/', auth_required(helpdesk_in), name='notif_helpdesk'),
+
+    #khusus untuk modul
+    path('modules/', auth_required(modul), name='custom_module'),
+    #khusus untuk modul
 
     path('login/', login, name='login'),
     path('login_action/', login_action, name='login_action'),

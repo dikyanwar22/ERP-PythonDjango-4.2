@@ -4,6 +4,28 @@ import json
 from django.http import HttpResponse
 from django.db import connection
 
+def modul(request):
+    with connection.cursor() as cursor:
+        cursor.execute("SELECT id, nama, icon, uri, group_id, deleted FROM modul ORDER BY nama ASC")
+        modul = cursor.fetchall()
+    data = {'modul_list': []}
+    for row in modul:
+        modul_id, nama, icon, uri, group_id, deleted = row
+        group_ids = group_id.split(",") if group_id else []  # Pisahkan ID level
+        akses_list = []
+        if group_ids:
+            with connection.cursor() as cursor:
+                cursor.execute("SELECT name FROM auth_group WHERE id IN %s ORDER BY name ASC", [tuple(group_ids)])
+                akses_list = [row[0] for row in cursor.fetchall()]
+        data['modul_list'].append({
+            'id': modul_id,
+            'nama': nama,
+            'icon': icon,
+            'uri': uri,
+            'deleted': deleted,
+            'akses_list': akses_list
+        })
+    return render(request, "modules/modul/modul/modul.html", {"modul_list": data["modul_list"]})
 
 def module_user(request):
     level_akses = request.session.get('group_id')
