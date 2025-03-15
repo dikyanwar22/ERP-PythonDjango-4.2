@@ -1055,3 +1055,301 @@ Traceback (most recent call last):
     _mysql.connection.query(self, query)
 django.db.utils.OperationalError: (1054, "Unknown column 'nama' in 'field list'")
 2025-03-15 09:32:32,777 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py changed, reloading.
+2025-03-15 09:36:37,923 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py changed, reloading.
+2025-03-15 09:48:29,036 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 09:48:36,705 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 09:53:12,102 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py changed, reloading.
+2025-03-15 09:54:56,341 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 09:54:56,350 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 09:54:56,350 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 09:55:00,470 - ERROR - Internal Server Error: /sub_menu/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 103, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'function, b.uri AS folder, b.nama AS modul\n            FROM menu a\n            J' at line 3")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py", line 14, in wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py", line 87, in sub_menu
+    cursor.execute("""
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 103, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'function, b.uri AS folder, b.nama AS modul\n            FROM menu a\n            J' at line 3")
+2025-03-15 09:57:01,205 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py changed, reloading.
+2025-03-15 09:57:07,314 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py changed, reloading.
+2025-03-15 09:57:11,220 - ERROR - Internal Server Error: /sub_menu/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'db_django.level' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py", line 14, in wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py", line 116, in sub_menu
+    cursor.execute("SELECT nama FROM level WHERE deleted = '0' AND id = %s ORDER BY nama ASC", [group_id])
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'db_django.level' doesn't exist")
+2025-03-15 09:57:30,697 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py changed, reloading.
+2025-03-15 09:57:32,636 - ERROR - Internal Server Error: /sub_menu/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'nama' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py", line 14, in wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py", line 116, in sub_menu
+    cursor.execute("SELECT nama FROM auth_group WHERE deleted = '0' AND id = %s ORDER BY nama ASC", [group_id])
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'nama' in 'field list'")
+2025-03-15 09:57:49,125 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py changed, reloading.
+2025-03-15 09:57:52,459 - ERROR - Internal Server Error: /sub_menu/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'nama' in 'order clause'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py", line 14, in wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py", line 116, in sub_menu
+    cursor.execute("SELECT name FROM auth_group WHERE id = %s ORDER BY nama ASC", [group_id])
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'nama' in 'order clause'")
+2025-03-15 09:57:59,754 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py changed, reloading.
+2025-03-15 09:59:19,566 - ERROR - Internal Server Error: /sub_menu/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py", line 14, in wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\backend\modul.py", line 127, in sub_menu
+    return render(request, "modules/modul/sub_menu/sub_menu.html", {"sub": submenu_list})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'modules' not found. 'modules' is not a valid view function or pattern name.
+2025-03-15 09:59:36,231 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.

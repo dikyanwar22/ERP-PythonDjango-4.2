@@ -19,18 +19,19 @@
                     <div style="padding-bottom: 30px;">
                        <ul class="nav nav-tabs">
                               <li class="nav-item">
-                                <a class="nav-link" href="{{ route('modul') }}">Modul</a>
+                                <a class="nav-link" href="{% url 'custom_modules' %}">Modul</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('menu') }}">Menu</a>
+                                <a class="nav-link" href="{% url 'custom_menu' %}">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ route('sub_menu') }}">Sub Menu</a>
+                                <a class="nav-link active" href="{% url 'custom_sub_menu' %}">Sub Menu</a>
                             </li>
                         </ul>
                     </div>
 
-                        <a href="{{route('submenu_add')}}" class="btn btn-md btn-success mb-3">TAMBAH</a>
+                    <a href="" class="btn btn-md btn-success mb-3">TAMBAH</a>
+
                         <table class="table table-bordered" id="tabel1">
                             <thead>
                               <tr>
@@ -45,36 +46,35 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <?php if($sub->count() > 0) : ?>
-                            <?php
-                                $no = 1;
-                                foreach($sub as $key => $v) :
-                                  $params_id = base64_encode($v->id);
-                                  $id = rawurlencode($params_id);
-                            ?>
-                            <tr>
-                                <td class="text-center"><?= $no; ?></td>
-                                <td><?= $v->folder; ?> / <?= $v->class; ?> / <b style="color: red"><?= $v->function; ?></b></td>
-                                <td><i class="<?= $v->icon; ?>"></i> <?= $v->sub_menu; ?></td>
-                                <td>
-                                  <?php foreach($akses[$v->id] as $nilai) : ?>
-                                  <li><?= $nilai; ?></li>
-                                  <?php endforeach; ?>
-                              </td>
-                              <td><?= $v->menu; ?></td>
-                              <td><?= $v->modul; ?></td>
-                              <td><?= ($v->deleted == '0') ? 'Tampil' : 'Tutup'; ?></td>
-                              <td>
-                                  <a href="{{route('submenu_edit', $id)}}" class="btn btn-sm btn-primary">Edit</a>
-                              </td>
-                          </tr>
-                          <?php $no++; endforeach; ?>
-                              <?php else : ?>
-                                  <div class="alert alert-danger">
-                                      Data Post belum Tersedia.
-                                  </div>
-                              <?php endif; ?>
-                            </tbody>
+                                {% for v in sub %}
+                                    <tr>
+                                        <td class="text-center">{{ forloop.counter }}</td>
+                                        <td>{{ v.folder }} / <b style="color: red">{{ v.function }}</b></td>
+                                        <td><i class="{{ v.icon }}"></i> {{ v.sub_menu }}</td>
+                                        <td>
+                                            <ul>
+                                                {% for nilai in v.akses %}
+                                                    <li>{{ nilai }}</li>
+                                                {% empty %}
+                                                    <li>-</li>
+                                                {% endfor %}
+                                            </ul>
+                                        </td>
+                                        <td>{{ v.sub_menu }}</td>
+                                        <td>{{ v.modul }}</td>
+                                        <td>
+                                            {% if v.deleted == "0" %}
+                                                Tampil
+                                            {% else %}
+                                                Tutup
+                                            {% endif %}
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-sm btn-primary">Edit</a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>                            
                           </table>
                     </div>
                 </div>
@@ -82,34 +82,17 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-    <script>
-        //message with toastr
-        @if(session()->has('success'))
-
-            toastr.success('{{ session('success') }}', 'BERHASIL!');
-
-        @elseif(session()->has('error'))
-
-            toastr.error('{{ session('error') }}', 'GAGAL!');
-
-        @endif
-    </script>
-
-    <!-- Custom Datatables -->
+<!-- Custom Datatables -->
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
 <script>
     $(document).ready(function(){
         $('#tabel1').DataTable();
-        $('#tabel2').DataTable();
-        $('#tabel3').DataTable();
-        $('#tabel4').DataTable();
-        $('#tabel5').DataTable();
     });
 </script>
 <!-- Custom Datatables -->

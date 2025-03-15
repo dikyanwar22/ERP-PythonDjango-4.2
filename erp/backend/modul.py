@@ -81,6 +81,62 @@ def menu(request):
 
     return render(request, "modules/modul/menu/menu.html", {"menu": menu_list})
 
+def sub_menu(request):
+    with connection.cursor() as cursor:
+        # Query untuk mengambil sub-menu
+        cursor.execute("""
+            SELECT 
+                a.id, a.modul_id, a.nama AS sub_menu, a.icon, a.deleted, 
+                a.group_id, a.uri AS `function`, b.uri AS folder, b.nama AS modul
+            FROM menu a
+            JOIN modul b ON a.modul_id = b.id
+            ORDER BY a.nama ASC
+        """)
+        submenu = cursor.fetchall()
+
+    # Konversi hasil query ke dalam list of dictionaries
+    submenu_list = [
+        {
+            'id': row[0], 'modul_id': row[1], 'sub_menu': row[2], 'icon': row[3], 
+            'deleted': row[4], 'group_id': row[5], 'function': row[6], 
+            'folder': row[7], 'modul': row[8], 'akses': []
+        }
+        for row in submenu
+    ]
+
+    akses = {}
+
+    # Ambil data akses berdasarkan group_id
+    for item in submenu_list:
+        level_ids = item["group_id"].split(",") if item["group_id"] else []
+        akses_list = []
+
+        with connection.cursor() as cursor:
+            for group_id in level_ids:
+                cursor.execute("SELECT name FROM auth_group WHERE id = %s ORDER BY name ASC", [group_id])
+                result = cursor.fetchone()
+                if result:
+                    akses_list.append(result[0])
+
+        akses[item["id"]] = akses_list
+
+    # Tambahkan akses ke setiap sub-menu
+    for item in submenu_list:
+        item["akses"] = akses.get(item["id"], [])
+
+    return render(request, "modules/modul/sub_menu/sub_menu.html", {"sub": submenu_list})
+
+
+
+
+
+
+
+
+
+
+    
+
 def module_user(request):
     level_akses = request.session.get('group_id')
     

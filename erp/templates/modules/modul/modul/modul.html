@@ -16,20 +16,22 @@
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
 
-                    <div style="padding-bottom: 30px;">
-                        <ul class="nav nav-tabs">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="">Modul</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Sub Menu</a>
-                            </li>
-                        </ul>
-                    </div>
+                        <div style="padding-bottom: 30px;">
+                            <ul class="nav nav-tabs">
+                                   <li class="nav-item">
+                                     <a class="nav-link active" href="{% url 'custom_modules' %}">Modul</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link" href="{% url 'custom_menu' %}">Menu</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link" href="{% url 'custom_sub_menu' %}">Sub Menu</a>
+                                 </li>
+                             </ul>
+                         </div>
+
                         <a href="" class="btn btn-md btn-success mb-3">TAMBAH</a>
+
                         <table class="table table-bordered" id="tabel1">
                             <thead>
                               <tr>
