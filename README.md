@@ -1,12 +1,7 @@
-Saya akan membuat tutorial lengkap untuk CRUD (Create, Read, Update, Delete) di Django LTS menggunakan Bootstrap. Tutorial ini akan mencakup:
+ERP (Enterprise Resource Planning) adalah sistem perangkat lunak yang digunakan untuk mengelola dan mengintegrasikan berbagai aspek bisnis dalam suatu organisasi, seperti keuangan, sumber daya manusia, produksi, rantai pasokan, penjualan, dan lainnya.
 
-✅ Setup Django (menggunakan versi LTS terbaru)
-✅ Membuat model database
-✅ Membuat views untuk CRUD
-✅ Menggunakan Bootstrap untuk tampilan
-✅ Membuat form dengan Django Forms
-✅ Menjalankan dan menguji aplikasi
+Dengan ERP, semua data dan proses bisnis dapat diakses dalam satu platform terpusat, sehingga meningkatkan efisiensi, akurasi, dan kolaborasi antar departemen.
 
-Saya akan menuliskan tutorialnya dalam format yang mudah dipahami.
+Disini saya membuat ERP dengan Framework Django 4.2 Bahasa Pemrograman Python
 
 By : Dicky Anwar
