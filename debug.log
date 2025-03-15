@@ -53,3 +53,148 @@
             ORDER BY a.id DESC
          | Params: 1, 1
 2025-03-11 09:03:22,772 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 07:46:21,687 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 07:46:21,719 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 07:46:21,719 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 07:50:32,115 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 07:50:32,115 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 07:50:32,115 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 07:50:33,760 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 07:50:33,768 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 07:50:33,775 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 07:52:44,490 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 07:52:44,495 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 07:52:44,495 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 07:52:45,940 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 07:52:45,940 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 07:52:45,940 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 07:58:26,526 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 07:58:36,609 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 07:58:48,215 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 07:58:52,806 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 07:58:59,978 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 07:59:13,791 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 07:59:25,586 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 07:59:36,562 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 07:59:36,588 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 07:59:36,588 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 07:59:38,056 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 07:59:38,056 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 07:59:38,056 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 07:59:39,256 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 07:59:39,256 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 07:59:39,256 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 08:03:53,833 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\settings.py changed, reloading.
+2025-03-15 08:04:26,291 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\settings.py changed, reloading.
+2025-03-15 08:04:28,634 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\settings.py changed, reloading.
+2025-03-15 08:04:32,034 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\settings.py changed, reloading.
+2025-03-15 08:04:40,847 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 08:04:40,857 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 08:04:40,860 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 08:04:43,934 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 08:04:43,934 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 08:04:43,934 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 08:08:39,246 - WARNING - Not Found: /favicon.ico
+2025-03-15 08:09:30,815 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\settings.py changed, reloading.
+2025-03-15 08:10:14,555 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 08:10:14,555 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 08:10:14,555 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))

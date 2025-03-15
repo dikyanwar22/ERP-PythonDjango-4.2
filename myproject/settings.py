@@ -127,6 +127,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "erp/static"),
 ]
 
+# Session Settings
+SESSION_ENGINE = "django.contrib.sessions.backends.db"  # Simpan sesi di database
+SESSION_COOKIE_AGE = 300  # 300 detik = 5 menit
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True  # Sesi habis saat browser ditutup
+SESSION_SAVE_EVERY_REQUEST = True  # Reset waktu sesi setiap request
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 

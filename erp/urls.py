@@ -17,14 +17,18 @@ def auth_required(view_func):
 urlpatterns = [
     path('', auth_required(index), name='index'), # Gunakan wrapper di sini agar yang sudah login
 
-    path('add_data/', add_data, name='add_data'),
-    path('get_module/', get_module, name='get_module'),
-    path('add_action/', add_action, name='add_action'),
-    path('edit/<int:id>/', function_edit, name='edit_mahasiswa'),
-    path('view_edit/', function_view_edit, name='view_edit'),
-    path('aksi_edit/', function_edit_action, name='edit_action'),
+    path('add_data/', auth_required(add_data), name='add_data'),
+    path('get_module/', auth_required(get_module), name='get_module'),
+    path('add_action/', auth_required(add_action), name='add_action'),
+    path('edit/<int:id>/', auth_required(function_edit), name='edit_mahasiswa'),
+    path('view_edit/', auth_required(function_view_edit), name='view_edit'),
+    path('aksi_edit/', auth_required(function_edit_action), name='edit_action'),
 
-    path('hapus/<int:id>/', hapus_mahasiswa, name='hapus_mahasiswa'),
+    path('hapus/<int:id>/', auth_required(hapus_mahasiswa), name='hapus_mahasiswa'),
+    path('profile/', auth_required(profile), name='profile'),
+
+    path('modul/', auth_required(module_user), name='module_user'),
+    path('helpdesk/', auth_required(helpdesk_in), name='notif_helpdesk'),
 
     path('login/', login, name='login'),
     path('login_action/', login_action, name='login_action'),
@@ -32,10 +36,6 @@ urlpatterns = [
     path('register/', register, name='register'),
     path('register_action/', register_action, name='register_action'),
 
-    path('modul/', module_user, name='module_user'),
-    path('helpdesk/', helpdesk_in, name='notif_helpdesk'),
-
-    path('profile/', profile, name='profile'),
     path('logout/', logout_action, name='logout_action'),
 
 ]
