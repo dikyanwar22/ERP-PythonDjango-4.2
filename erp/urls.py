@@ -9,6 +9,9 @@ def auth_required(view_func):
         return view_func(request, *args, **kwargs)
     return wrapper
 
+#untuk pertama kali arahkan url kesini
+# http://127.0.0.1:8000/erp/
+
 urlpatterns = [
     path('', auth_required(views.index), name='index'),
     path('add_data/', auth_required(views.add_data), name='add_data'),
