@@ -38,8 +38,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'erp',
+    'django_extensions',
+
+    'rest_framework',  # Pastikan ini ada
+    'rest_framework_simplejwt',
+    'erp', #custom untuk ERP
+    'api', #custom untuk API
 ]
+
+# Konfigurasi JWT Bearer Token
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

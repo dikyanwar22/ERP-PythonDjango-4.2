@@ -1353,3 +1353,1755 @@ Traceback (most recent call last):
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'modules' not found. 'modules' is not a valid view function or pattern name.
 2025-03-15 09:59:36,231 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 10:55:07,156 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:55:13,495 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:55:14,503 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:55:19,912 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:55:28,148 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:56:16,925 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:56:20,924 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:57:04,519 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\auth.py changed, reloading.
+2025-03-15 10:57:09,683 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\auth.py changed, reloading.
+2025-03-15 10:57:17,978 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:59:02,470 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\urls.py changed, reloading.
+2025-03-15 10:59:08,462 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:59:11,899 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:59:14,484 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 10:59:35,757 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 11:00:43,077 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 11:00:46,217 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 11:00:49,481 - WARNING - Not Found: /erp/
+2025-03-15 11:00:58,034 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 11:01:08,026 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 11:01:10,818 - WARNING - Not Found: /erp/
+2025-03-15 11:01:14,034 - WARNING - Not Found: /erp/modules/
+2025-03-15 11:02:07,974 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 11:02:41,105 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 11:02:42,358 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 11:03:02,822 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\urls.py changed, reloading.
+2025-03-15 11:03:10,952 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 11:03:29,810 - WARNING - Method Not Allowed: /api/login/
+2025-03-15 11:04:49,121 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 11:04:53,174 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 11:05:11,275 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 11:05:11,282 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 11:05:11,282 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 11:05:36,859 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 11:05:41,424 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 11:05:44,077 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 11:06:22,665 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 11:06:22,672 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 11:06:22,672 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 11:06:47,068 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 11:06:47,072 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 11:06:47,073 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 11:07:02,601 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 11:07:02,601 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 11:07:02,601 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 11:07:57,106 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\urls.py changed, reloading.
+2025-03-15 11:08:02,651 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\urls.py changed, reloading.
+2025-03-15 11:08:05,283 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\urls.py changed, reloading.
+2025-03-15 11:09:08,850 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 11:09:17,796 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 11:09:32,315 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 11:12:43,126 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:12:51,789 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:13:04,633 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:14:37,377 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\auth.py changed, reloading.
+2025-03-15 11:14:45,551 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\auth.py changed, reloading.
+2025-03-15 11:14:49,345 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\auth.py changed, reloading.
+2025-03-15 11:15:12,789 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 11:15:18,730 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 11:17:24,272 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:17:41,398 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:17:55,884 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:18:53,652 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:19:40,099 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 11:19:40,099 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 11:19:40,099 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 11:23:29,859 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:23:38,685 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:23:59,302 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:24:43,421 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:25:39,435 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:25:50,016 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:32:04,672 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:32:32,106 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:33:19,647 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:33:24,912 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:33:28,739 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:34:32,521 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:35:14,071 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 11:35:19,400 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:35:26,200 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 11:35:45,541 - WARNING - Not Found: /api/api_register/
+
+2025-03-15 11:36:04,017 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:36:29,437 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:36:49,448 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:43:53,518 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 11:44:30,026 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:44:35,131 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:44:42,500 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:44:43,428 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:45:22,540 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:50:25,210 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:52:10,789 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:53:17,477 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\urls.py changed, reloading.
+2025-03-15 11:53:28,009 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\urls.py changed, reloading.
+2025-03-15 11:53:42,138 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\urls.py changed, reloading.
+2025-03-15 11:54:53,993 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 11:55:05,911 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 11:55:22,435 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 11:55:26,975 - WARNING - Not Found: /api/register/
+
+2025-03-15 11:55:31,298 - WARNING - Not Found: /api/register/
+
+2025-03-15 12:00:03,803 - WARNING - Not Found: /api/register/
+
+2025-03-15 12:01:48,366 - WARNING - Forbidden (CSRF cookie not set.): /api/register/
+2025-03-15 12:01:49,667 - WARNING - Forbidden (CSRF cookie not set.): /api/register/
+2025-03-15 12:02:32,032 - WARNING - Forbidden (CSRF cookie not set.): /api/register/
+2025-03-15 12:03:49,418 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:04:45,164 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:06:14,229 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:06:19,335 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:06:38,755 - WARNING - Bad Request: /api/register/
+2025-03-15 12:06:58,504 - WARNING - Bad Request: /api/register/
+2025-03-15 12:06:59,423 - WARNING - Bad Request: /api/register/
+2025-03-15 12:07:00,020 - WARNING - Bad Request: /api/register/
+2025-03-15 12:07:01,604 - WARNING - Bad Request: /api/register/
+2025-03-15 12:08:00,854 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:08:07,046 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 83, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:08:18,384 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 83, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:09:26,348 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:09:32,499 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:09:35,591 - WARNING - Bad Request: /api/register/
+2025-03-15 12:09:48,014 - WARNING - Bad Request: /api/register/
+2025-03-15 12:09:48,883 - WARNING - Bad Request: /api/register/
+2025-03-15 12:09:49,415 - WARNING - Bad Request: /api/register/
+2025-03-15 12:11:14,168 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:11:19,213 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:11:22,810 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 83, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:16:40,661 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:17:01,695 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:17:16,926 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:17:42,112 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 85, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:18:33,944 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 85, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:18:47,626 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 85, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:18:56,459 - WARNING - Method Not Allowed: /api/register/
+2025-03-15 12:18:58,487 - WARNING - Method Not Allowed: /api/register/
+2025-03-15 12:19:03,182 - WARNING - Method Not Allowed: /api/register/
+2025-03-15 12:19:43,207 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 85, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:19:44,233 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 85, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:19:44,675 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 85, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:19:46,106 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 85, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:19:47,107 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 85, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:19:59,098 - WARNING - Method Not Allowed: /api/register/
+2025-03-15 12:20:03,098 - WARNING - Method Not Allowed: /api/register/
+2025-03-15 12:20:51,520 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:21:15,337 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 12:21:19,509 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 25, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:21:45,819 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 25, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:21:50,534 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 25, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:22:13,504 - WARNING - Method Not Allowed: /api/register/
+2025-03-15 12:22:15,299 - WARNING - Method Not Allowed: /api/register/
+2025-03-15 12:23:53,089 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:23:56,251 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:24:01,603 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 17, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:24:02,562 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 17, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:24:03,348 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 17, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:24:04,196 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 17, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:24:05,030 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 17, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'is_superuser' doesn't have a default value")
+2025-03-15 12:25:02,129 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:25:05,382 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'first_name' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 17, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'first_name' doesn't have a default value")
+2025-03-15 12:25:06,610 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'first_name' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 17, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'first_name' doesn't have a default value")
+2025-03-15 12:25:07,492 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'first_name' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 17, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'first_name' doesn't have a default value")
+2025-03-15 12:25:08,279 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'first_name' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 17, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'first_name' doesn't have a default value")
+2025-03-15 12:25:21,310 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'first_name' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 17, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'first_name' doesn't have a default value")
+2025-03-15 12:27:34,507 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:27:49,832 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:28:06,423 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry 'taichan' for key 'auth_user.username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 58, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'taichan' for key 'auth_user.username'")
+2025-03-15 12:28:23,240 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 12:28:25,270 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 12:28:39,908 - ERROR - Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry 'taichan' for key 'auth_user.username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py", line 58, in register_user
+    cursor.execute(
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\env\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'taichan' for key 'auth_user.username'")
+2025-03-15 12:29:53,667 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 12:30:19,216 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\urls.py changed, reloading.
+2025-03-15 12:30:41,416 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\urls.py changed, reloading.
+2025-03-15 12:30:45,573 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\myproject\urls.py changed, reloading.
+2025-03-15 12:31:56,960 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:32:05,310 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:32:21,673 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:32:56,794 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\api\views.py changed, reloading.
+2025-03-15 12:34:09,283 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 12:34:35,980 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 12:57:21,077 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
+2025-03-15 12:57:47,525 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 12:57:47,532 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 12:57:47,532 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 12:59:45,860 - DEBUG - Current User ID: 1, Level ID: 1
+2025-03-15 12:59:45,865 - DEBUG - Executed Query: 
+            SELECT a.id, c.first_name AS sender, a.message, a.created_at 
+            FROM helpdesk_inbox AS a
+            JOIN auth_user AS c ON a.user_id_sender = c.id
+            WHERE a.status != '2' AND (
+                (a.user_id_receiver IS NOT NULL AND a.user_id_receiver = %s) OR
+                (a.user_id_receiver IS NULL AND a.group_id = %s)
+            )
+            ORDER BY a.id DESC
+         | Params: 1, 1
+2025-03-15 12:59:45,865 - DEBUG - Query Result: ((3, 'diky', 'apakah data ini masuk?', datetime.datetime(2025, 2, 5, 1, 20, 21)), (2, 'budi', 'Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena dengan rahmat-Nya, kita semua masih diberi kesempatan untuk berkumpul di sini dalam keadaan sehat wal afiat. Pada kesempatan yang berbahagia ini, saya ingin menyampaikan beberapa patah kata mengenai kebangsaan kita, mengenai apa yang telah kita raih, dan apa yang harus kita perjuangkan bersama untuk masa depan bangsa.\n\nSaudara-saudara sekalian,\nBangsa Indonesia, yang terdiri dari beragam suku, agama, dan budaya, adalah contoh nyata dari kekuatan dalam keberagaman. Sejarah panjang perjuangan kemerdekaan kita telah membuktikan bahwa perbedaan tidaklah menjadi penghalang, melainkan kekuatan yang menyatukan kita. Dari Sabang sampai Merauke, dari Miangas sampai Pulau Rote, kita adalah satu, dalam semangat yang sama: Indonesia maju.', datetime.datetime(2025, 2, 5, 10, 53)), (1, 'ridwan', 'tolong perbaiki', datetime.datetime(2025, 2, 4, 9, 6, 29)))
+2025-03-15 12:59:52,272 - INFO - C:\Users\dicky.anwar\Videos\app\ERP-PythonDjango-4.2\erp\urls.py changed, reloading.
